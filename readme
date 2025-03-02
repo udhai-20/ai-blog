@@ -1,0 +1,97 @@
+# AI Blog - Frontend
+
+This is the frontend of the AI Blog application, built using **React (Chakra UI)** with mock API responses. This project provides a seamless user experience for browsing AI-generated blog posts.
+
+## **Live Demo**
+[Insert Vercel/Netlify Deployment Link Here]
+
+## **Features**
+- Search  blog posts dynamically
+- Responsive UI with light/dark mode support
+- Interactive navbar with search functionality
+- Mock API responses for blog data (created locally)
+
+## **Tech Stack**
+- **Frontend**: React, Chakra UI, React Router
+- **State Management**: React Context API
+- **Deployment**: Netlify
+
+---
+
+## **Setup Instructions**
+
+### **1. Clone the Repository**
+Since the project is not on GitHub, download the code from the **Google Drive link** and extract it.
+
+### **2. Install Dependencies**
+Make sure you have **Node.js** (v16+) installed, then run:
+```bash
+npm install
+# or
+yarn install
+```
+
+### **3. Run the Development Server**
+```bash
+npm run dev
+# or
+yarn dev
+```
+This will start the application at **http://localhost:3000/** (or another available port).
+
+### **4. Build for Production**
+```bash
+npm run build
+# or
+yarn build
+```
+This generates an optimized production-ready build.
+
+### **5. Deploy to Vercel/Netlify**
+
+1. **Netlify**:
+   - Push the build folder manually or use Netlify CLI:
+     ```bash
+     npm install -g netlify-cli
+     netlify deploy
+     ```
+
+---
+
+## **Mock API Details**
+The project uses a mock API response for blog data stored in `src/api/blogApi.js`.
+
+Example response:
+```json
+[
+  {
+    "id": 1,
+    "title": "Understanding AI Ethics",
+    "topic": "A deep dive into the ethical considerations of AI.",
+    "author": "John Doe",
+    "date": "November 7, 2023",
+    "content":"sampleContent",
+    "imageUrl":""
+  }
+]
+
+Modify `useBlogContext.js` to integrate a real API in the future.
+
+---
+
+## **UI/UX Design Choices**
+### **1. Clean & Minimalist Design**
+- Chakra UI provides a modern, accessible interface.
+- A simple, elegant color scheme ensures readability.
+
+### **2. Light/Dark Mode**
+- Implemented using Chakra UI’s `useColorModeValue()`.
+- Dark mode reduces eye strain for readers.
+
+### **3. Smooth User Experience**
+- **Navbar with Search Input**: Search blogs dynamically.
+- **Fully Responsive**: Works on mobile, tablet, and desktop.
+
+Mock API for Seamless Development
+
+Uses mock data to simulate blog posts, allowing easy future API integration.
